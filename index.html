@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1>Akash M</h1>
+        <h1 onclick="togglePhoto()">Akash M</h1>
     </header>
     <section id="photo" class="section">
         <!-- Add your photo here -->
@@ -104,7 +104,12 @@
         <p>Languages Known: English, Hindi, Kannada, Tulu</p>
     </section>
 
-    
+    <script>
+        function togglePhoto() {
+            var photoSection = document.getElementById("photo");
+            photoSection.style.display = (photoSection.style.display === 'none' || photoSection.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
 
 </html>
