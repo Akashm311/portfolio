@@ -5,111 +5,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akash M - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 onclick="togglePhoto()">Akash M</h1>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="#top">Akash M</a>
+            <nav>
+                <a href="#summary">Summary</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+            </nav>
+        </div>
     </header>
-    <section id="photo" class="section">
-        <!-- Add your photo here -->
-        <img src="my.jpg" alt="Akash M">
-    </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Information</h2>
-        <p>Pernody house, Nellikar post and village, Mangalore taluk, D K district, pin-574107</p>
-        <p>Phone: 9971774929</p>
-        <p>Email: <a href="mailto:akashmoolya31@gmail.com">akashmoolya31@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akash-m-99ab891b9">linkedin.com/in/akash-m-99ab891b9</a></p>
-    </section>
+    <main id="top">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">DevOps Engineer</p>
+                <h1>CI/CD automation, Kubernetes administration, and Infrastructure as Code.</h1>
+                <p class="lead">
+                    DevOps Engineer with 2+ years of experience in CI/CD automation, Kubernetes administration,
+                    and Infrastructure as Code (IaC). Hands-on expertise in Jenkins, ArgoCD, Docker,
+                    Kubernetes, Podman, Ansible, Python, and Linux.
+                </p>
+                <div class="cta-row">
+                    <a class="btn primary" href="#experience">View experience</a>
+                    <a class="btn ghost" href="#projects">View projects</a>
+                </div>
+                <div class="meta">
+                    <span>Bangalore, India</span>
+                    <span>Phone: 9971774929</span>
+                    <span>Email: akashmoolya31@gmail.com</span>
+                    <span>LinkedIn: <a href="https://www.linkedin.com/in/akash-moolya31">linkedin.com/in/akash-moolya31</a></span>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="photo-wrap">
+                    <img src="1740169234532.jpg" alt="Akash M">
+                </div>
+                <div class="card-info">
+                    <p class="card-title">Focus Areas</p>
+                    <p>
+                        DevOps enablement, Kubernetes administration, and scalable solution delivery across
+                        CI/CD automation, infrastructure as code, observability, and secure container platforms.
+                    </p>
+                    <p class="card-title">Certification</p>
+                    <p>Certified Kubernetes Administrator (CKA).</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="career-objective" class="section">
-        <h2>Career Objective</h2>
-        <p>To work in a learning and challenging environment as an engineer, utilizing skills and knowledge to contribute positively to personal growth as well as the growth of the organization.</p>
-    </section>
+        <section id="summary" class="section container">
+            <div class="section-title">
+                <h2>Professional Summary</h2>
+                <p>DevOps engineering profile and core strengths.</p>
+            </div>
+            <div class="card">
+                <p>
+                    DevOps Engineer with 2+ years of experience in CI/CD automation, Kubernetes administration,
+                    and Infrastructure as Code (IaC). Hands-on expertise in Jenkins, ArgoCD, Docker, Kubernetes,
+                    Podman, Ansible, Python, and Linux. Experienced in GitOps workflows, container security,
+                    image signing, monitoring, and deploying scalable microservices across on-premise VMware
+                    vSphere and Kubernetes environments. Certified Kubernetes Administrator (CKA).
+                </p>
+            </div>
+        </section>
 
-    <section id="academic-details" class="section">
-        <h2>Academic Qualification</h2>
-        <table>
-            <tr>
-                <th>Class</th>
-                <th>School & College</th>
-                <th>Board</th>
-                <th>Year of Pass</th>
-                <th>Grade</th>
-            </tr>
-            <tr>
-                <td>B.E (E&C)</td>
-                <td>NMAM Institute of Technology</td>
-                <td>VTU</td>
-                <td>Pursuing (2023)</td>
-                <td>9.32 CGPA</td>
-            </tr>
-            <tr>
-                <td>12th</td>
-                <td>Nitte SAM PU College</td>
-                <td>Government of Karnataka</td>
-                <td>2019</td>
-                <td>92.5%</td>
-            </tr>
-            <tr>
-                <td>10th</td>
-                <td>Jaycess English Medium School Karkala</td>
-                <td>Karnataka Secondary Education Examination Board</td>
-                <td>2017</td>
-                <td>94.40%</td>
-            </tr>
-        </table>
-    </section>
+        <section id="experience" class="section container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+                <p>Impact-focused roles and responsibilities.</p>
+            </div>
+            <div class="stack">
+                <article class="timeline-item">
+                    <span class="pill">Aug 2023 - Present</span>
+                    <h3>DevOps Engineer — VCTI (Client: Cisco), Bangalore, India</h3>
+                    <ul class="clean-list">
+                        <li>Automated CI/CD pipelines using Jenkins and ArgoCD for 17+ microservices, reducing deployment time by 70% and increasing release frequency.</li>
+                        <li>Managed Kubernetes clusters for 17+ microservices, optimizing deployments and scaling policies to maintain 99.9% uptime.</li>
+                        <li>Managed Docker image repositories in JFrog Artifactory using JFrog CLI and Jenkins, implementing upload, versioning, immutability, retention, and promotion workflows.</li>
+                        <li>Built hardened Ubuntu-based container images using Podman and Docker, improving deployment speed by 40% and strengthening image security.</li>
+                        <li>Developed Infrastructure as Code using Python and Ansible for VM provisioning on VMware vSphere and KVM, cutting provisioning time by 50% and reducing configuration drift.</li>
+                        <li>Managed Gradle-based build pipelines for Java services, handling dependency management, build optimization, and artifact versioning across environments.</li>
+                        <li>Integrated Cosign for secure container image signing and supply-chain security.</li>
+                        <li>Automated OVA/QCOW2 image builds for Java, Go, and Node.js microservices for on-premise and virtualized deployments.</li>
+                        <li>Created monitoring stack (Prometheus, Grafana, Loki), improving incident detection by 40%.</li>
+                        <li>Performed hands-on debugging, log analysis, and root-cause resolution for build, deployment, and runtime issues in Linux environments.</li>
+                        <li>Automated YAML-driven VMware vSphere provisioning for 60+ VMs using Jenkins and AWX, reducing manual configuration by 100%.</li>
+                        <li>Improved system reliability with automated health checks and lifecycle management workflows.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <span class="pill">Oct 2022 - Mar 2023</span>
+                    <h3>Machine Learning Engineer Intern — Automatad (Remote)</h3>
+                    <ul class="clean-list">
+                        <li>Containerized ML models using Docker and deployed with FastAPI for scalable inference.</li>
+                        <li>Automated reproducible environments via Docker Compose.</li>
+                        <li>Fine-tuned Transformer models (TensorFlow, PyTorch, HuggingFace) for keyword extraction.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <section id="projects" class="section">
-        <h2>Academic Projects</h2>
-        <ul>
-            <li>Four-bit code converter using mux and gates in the second year.</li>
-            <li>Digital Thermometer using 8051 microcontroller and LM35 temperature sensor in the third year.</li>
-            <li>Electronic letterbox using 8051 microcontroller in the third year.</li>
-        </ul>
-    </section>
+        <section id="projects" class="section container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Recent work in analytics and engineering automation.</p>
+            </div>
+            <div class="grid two">
+                <article class="card">
+                    <span class="pill">Nov 2024 - Present</span>
+                    <h3>GitHub & Bitbucket Analytics Tool</h3>
+                    <p>Python, REST, Pandas</p>
+                    <ul class="clean-list">
+                        <li>Developed analytics tool aggregating PRs, reviews, commits, and contributors across 20+ microservices.</li>
+                        <li>Enabled unified dashboards for code health, review metrics, and sprint insights.</li>
+                        <li>Integrated analytics into internal dashboards for release cycles and code-freeze periods.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <section id="courses" class="section">
-        <h2>Courses</h2>
-        <ul>
-            <li>Programming with Python - Online training on Internshala</li>
-            <li>Programming Foundation with JavaScript - Coursera</li>
-            <li>Supervised Machine Learning: Regression and Classification - Coursera</li>
-            <li>Neural Networks and Deep Learning - Coursera</li>
-            <li>Structuring Machine Learning Projects - Coursera</li>
-            <li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization - Coursera</li>
-            <li>Convolutional Neural Networks - Coursera</li>
-            <li>Sequence Models - Coursera</li>
-        </ul>
-    </section>
-    
-    <section id="internships" class="section">
-        <h2>Internships</h2>
-        <ul>
-            <li>Internship at <a href="https://automatad.com/">Automatad</a> | Oct 2022 - Mar 2023</li>
-            <li>Python Internship at DLithe | Sep 2021 - Oct 2021</li>
-            <li>Intern at Sri Shasha Prayathi, NITK Surathkal Incubated | Jul 2022 - Aug 2022</li>
-        </ul>
-    </section>
-    
+        <section id="skills" class="section container">
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <p>Tools, platforms, and languages.</p>
+            </div>
+            <div class="grid two">
+                <article class="card">
+                    <ul class="clean-list">
+                        <li>CI/CD & DevOps: Jenkins, ArgoCD, GitOps, Git, GitHub, Bitbucket, JFrog Artifactory</li>
+                        <li>Containers & Orchestration: Kubernetes, Docker, Podman</li>
+                        <li>Infrastructure as Code & Automation: Ansible, Python, Shell Scripting, YAML</li>
+                        <li>Monitoring & Observability: Prometheus, Grafana, Loki</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <ul class="clean-list">
+                        <li>Cloud & Virtualization: AWS (EC2, EKS, IAM, VPC, S3, ECR), VMware vSphere, KVM</li>
+                        <li>Programming Languages: Python, Shell, Java, C/C++, Go</li>
+                        <li>Operating Systems: Linux (Ubuntu, RHEL)</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    <section id="personal-details" class="section">
-        <h2>Personal Details</h2>
-        <p>Date of Birth: 31/08/2001</p>
-        <p>Nationality: Indian</p>
-        <p>Languages Known: English, Hindi, Kannada, Tulu</p>
-    </section>
+        <section id="education" class="section container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>Academic background.</p>
+            </div>
+            <div class="card">
+                <h3>NMAM Institute of Technology, Udupi, Karnataka</h3>
+                <p>B.E. in Electronics and Communication (CGPA: 9.3)</p>
+                <p>Aug 2019 - May 2023</p>
+            </div>
+        </section>
 
-    <script>
-        function togglePhoto() {
-            var photoSection = document.getElementById("photo");
-            photoSection.style.display = (photoSection.style.display === 'none' || photoSection.style.display === '') ? 'block' : 'none';
-        }
-    </script>
+        <section id="certifications" class="section container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+                <p>Professional certifications and specializations.</p>
+            </div>
+            <div class="grid two">
+                <article class="card">
+                    <h3>Certified Kubernetes Administrator (CKA)</h3>
+                    <p>Linux Foundation — Apr 2024 (Valid until May 2026)</p>
+                </article>
+                <article class="card">
+                    <h3>Deep Learning Specialization</h3>
+                    <p>Coursera — Jun 2023</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Akash M. Built with clarity and intent.</p>
+    </footer>
 </body>
 
 </html>
